@@ -36,27 +36,14 @@ export default function SignInPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4 relative overflow-hidden">
-
-      <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-      <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
-      <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
-      
       <div className="relative z-10 w-full max-w-md">
-
         <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 shadow-2xl hover:bg-white/20 transition-all duration-300 hover:scale-105">
-
           <div className="text-center mb-8">
-            <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl mx-auto mb-4 flex items-center justify-center rotate-3 hover:rotate-0 transition-transform duration-300 shadow-lg">
-              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-            </div>
             <h1 className="text-3xl font-bold text-white mb-2">
               Welcome Back
             </h1>
             <p className="text-gray-300 text-sm">Sign in to your account to continue</p>
           </div>
-
 
           {error && (
             <div className="mb-6 p-4 bg-red-500/20 border border-red-400/30 rounded-lg text-red-200 text-sm animate-bounce">
@@ -67,9 +54,7 @@ export default function SignInPage() {
             </div>
           )}
 
-
           <div className="space-y-6">
-
             <div className="relative group">
               <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                 <svg className="h-5 w-5 text-gray-400 group-focus-within:text-purple-400 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,7 +69,6 @@ export default function SignInPage() {
                 className="w-full pl-12 pr-4 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent hover:bg-white/10 transition-all duration-200"
               />
             </div>
-
 
             <div className="relative group">
               <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -117,7 +101,6 @@ export default function SignInPage() {
               </button>
             </div>
 
-
             <button
               onClick={handleSignIn}
               disabled={isLoading}
@@ -135,42 +118,17 @@ export default function SignInPage() {
               )}
             </button>
           </div>
-
-
-          {/* <div className="mt-8 space-y-4">
-            <div className="flex items-center justify-between text-sm">
-              <label className="flex items-center text-gray-300">
-                <input type="checkbox" className="rounded border-gray-600 text-purple-600 shadow-sm focus:border-purple-300 focus:ring focus:ring-purple-200 focus:ring-opacity-50 bg-white/10 border-white/20" />
-                <span className="ml-2">Remember me</span>
-              </label>
-              <a href="#" className="text-purple-400 hover:text-purple-300 transition-colors duration-200">
-                Forgot password?
-              </a>
-            </div>
-            
-            <div className="text-center text-gray-400 text-sm">
-              Don't have an account?{' '}
-              <a href="#" className="text-purple-400 hover:text-purple-300 transition-colors duration-200 font-medium">
-                Sign up
-              </a>
-            </div>
-          </div> */}
         </div>
-
 
         <div className="mt-6 text-center">
           <div className="inline-flex items-center px-4 py-2 bg-white/5 rounded-full text-xs text-gray-400 border border-white/10">
             <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
             Admin (Username : Alexander; Password : admin)
           </div>
-          
-
-
-          <div className="inline-flex items-center px-4 py-2 bg-white/5 rounded-full text-xs text-gray-400 border border-white/10">
+          <div className="inline-flex items-center px-4 py-2 bg-white/5 rounded-full text-xs text-gray-400 border border-white/10 mt-3">
             <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
             User (Username : Ryan; Password : user)
           </div>
-          
         </div>
       </div>
     </div>
