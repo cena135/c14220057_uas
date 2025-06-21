@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { getUserSession } from "@/utils/auth";
 import { getProducts, addProduct, updateProduct, deleteProduct } from "@/utils/api";
-import ProductTable from "@/components/ProductTable";
 import Navbar from "@/components/Navbar";
 import { Product, User } from "@/types";
 
